@@ -8,10 +8,9 @@
 </head>
 <body>
 <div id="app">
-    <span @mouseover="changeText">text</span>
-    <p>{{title}}</p>
-    <p v-bind:class="styleCSS">Цвет :{{styleCSS}}</p>
-    <input type="text" v-on:input="styleCSS = $event.target.value">
+    <input type="text" v-on:input="increment ($event.target.value)">
+    <p>{{value}}</p>
+    <p>{{doubleValue}}</p>
 </div>
 <script src="js/main.js"></script>
 </body>

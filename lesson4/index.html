@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+<div id="app">
+    <button v-on:click="show = !show">скрыть / показать</button>
+    <p v-if="show">text</p>
+    <p v-else>text2</p>
+
+    <ul>
+        <li v-for="(car,i) in cars">{{ i }} - {{ car.model }} , speed : {{ car.speed }}</li>
+    </ul>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
